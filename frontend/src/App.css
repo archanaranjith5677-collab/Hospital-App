@@ -1,0 +1,56 @@
+/* ==========================================================================
+   App.css — Layout-level styles: header, main, footer
+   ========================================================================== */
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+.app-header {
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+  color: #fff;
+  padding: 2rem 0;
+  box-shadow: var(--shadow-md);
+}
+
+.app-logo {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.app-subtitle {
+  font-size: 0.95rem;
+  opacity: 0.85;
+  margin-top: 0.3rem;
+}
+
+/* Main */
+.app-main {
+  flex: 1;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+/* Footer */
+.app-footer {
+  background-color: #f1f5f9;
+  border-top: 1px solid var(--color-border);
+  padding: 1.25rem 0;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .app-header {
+    padding: 1.5rem 0;
+  }
+  .app-logo {
+    font-size: 1.35rem;
+  }
+}
